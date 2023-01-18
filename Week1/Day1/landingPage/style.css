@@ -1,6 +1,24 @@
+* {
+    background-color: #F1F1F1;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("beachboardwalk.jpeg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
+
+header div {
+    text-align: center;
+    display: flex;
+}
+ 
+div {
+    border: 2px solid black;
+}
+
+footer {;
+    display: inline-block;
+    width: 33.33%;
+}
+
