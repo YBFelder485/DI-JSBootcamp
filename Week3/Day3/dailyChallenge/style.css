@@ -1,0 +1,25 @@
+li {
+    list-style-type: none;
+    font-size: 16pt;
+}
+
+h2 {
+    text-align: center;
+}
+
+.mail {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    background: lightsalmon;
+    border: 5px solid silver;
+}
+
+input {
+    font-size: 20pt;
+}
+
+input:focus, textarea:focus{
+    background-color: lightyellow;
+}

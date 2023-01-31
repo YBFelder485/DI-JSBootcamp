@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>JavaScript form validation - checking all letters</title>
+<link rel='stylesheet' href='style.css' type='text/css' />
+</head>
+    <body>
+        <div class="mail">
+            <h2>This input only accepts letters.<br> There's no way around it!</h2>
+            <form name="form1" action="#">
+                <ul>
+                    <li><input type='text' name='text1'/></li><br>
+                    <li><input type="submit" name="submit" value="Try me" onclick="allLetter(document.form1.text1)" /></li>
+                </ul>
+            </form>
+        </div>
+
+
+    <script src="script.js"> </script>
+</body>
+</html>
