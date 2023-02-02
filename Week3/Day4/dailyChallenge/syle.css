@@ -1,0 +1,22 @@
+li {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+li * {
+    position: relative;
+}
+
+li i {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+li *::before {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
