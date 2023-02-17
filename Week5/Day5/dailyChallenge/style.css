@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: darkgray;
+    display: grid;
+    place-items: center;
+}
+
+.converter {
+    border: 1px solid black;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px lightcoral;
+    padding: 2em 5em;
+    text-align: center;
+}
+
+#summary {
+    font-weight: bold;
+}
