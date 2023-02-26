@@ -3,14 +3,14 @@
 // #### Basics
 
 // 1. How to access the second element of the array `const nums = [3, 7, 10]`
-// const secondNum = nums[1]
+const secondNum = nums[1]
 
 // 2. For the code below, what does `arrNums.splice(2, 0)` return?
 
 //     ```javascript
 //     const arrNums = [1, 2, 3, 4, 5];
 //     ```
-// It will return an empty array. Starting at the second index, but not removing anything.
+It will return an empty array. Starting at the second index, but not removing anything.
 
 // 3. What is the result of the following code :
 
@@ -21,7 +21,7 @@
 //     const favoriteNumbers = [4, 5, 6, ...bestNumbers, ...secondBestNumbers];
 //     console.log(favoriteNumbers)
 //     ```
-// Using the spread operator, it will return [4,5,6,1,2,3,7,8,9]
+Using the spread operator, it will return [4,5,6,1,2,3,7,8,9]
 
 // 4. What does the following code print to the console?
 
@@ -37,7 +37,7 @@
 //    football.clubs.spain = "Real Madrid";
 //    console.log(football.clubs.spain);
 //    ```
-// It will return Real Madrid, because it has been updated.
+It will return Real Madrid, because it has been updated.
    
    
 // 5. What does the following code print to the console?
@@ -56,16 +56,16 @@
 //    football.clubs[myteam] = "France national football team";
 //    console.log(football.clubs);
 //    ```   
-// It will return clubs: {
-//        france : "Paris Saint-Germain",
-//        spain : "Atlético Madrid",
-//        bestTeam: "France national football team"          
-//      }
+It will return clubs: {
+       france : "Paris Saint-Germain",
+       spain : "Atlético Madrid",
+       bestTeam: "France national football team"          
+     }
    
 // 6. Can we define the function as follows? 
 //     If yes, 
-//     * what is it called ? called a function expression
-//     * what is this part ? it is anonymous
+    * what is it called ? called a function expression
+    * what is this part ? it is anonymous
 //         ```
 //         function(a, b){
 //            return a*b;
@@ -78,7 +78,7 @@
 //        return a*b;
 //     }
 //     ```
-// To call it x(1,2)
+To call it x(1,2)
 
 // 7. Variables created **without** any keyword, are always global, even if they are created inside a function ? Yes or No and explain
 
@@ -87,7 +87,7 @@
 //     	a = 5;
 //     }
 //     ```
-// Yes, without a keyword it becomes a global variable that is related to the window object.
+Yes, without a keyword it becomes a global variable that is related to the window object.
 
 // #### Functions
 
@@ -102,7 +102,7 @@
 //     }
 //     greeting(sayHello, "JavaScript!");
 //     ```
-// Yes, we can pass functions as arguments. This code will return "Hello, Javascript!"
+Yes, we can pass functions as arguments. This code will return "Hello, Javascript!"
     
 // 9. Transform this function into an arrow function. Explain what is the goal of this parameter `num1=10`.
 
@@ -115,8 +115,8 @@
 //       sum(42,0)
 //       console.log("the answer to everything is", sum(42,0))
 //       ```
-// const sum = (num1=10, num2) => num1 + num2;
-// num1=10 is giving a default parameter to num1.
+const sum = (num1=10, num2) => num1 + num2;
+num1=10 is giving a default parameter to num1.
 
 // 10. How would you call the `foo` function in the console.log, in order to display what the `bar` function returns ? Explain the process and concept behind it
 
@@ -130,13 +130,13 @@
      
 //      console.log(foo()())
 //      ```
-// Invoking foo() only returns the bar function but does not invoke it. So you need double () after foo in order to invoke the bar function after the foo function.
+Invoking foo() only returns the bar function but does not invoke it. So you need double () after foo in order to invoke the bar function after the foo function.
 
 // #### DOM
 
 // 11. Which of the following events will you add in the `addEventListener()`method? 
-//       ☐ click - This one!
-//       ☐ onclick
+      ☐ click - This one!
+//    ☐ onclick
 
 // 12. Does the `addEventListener()` method allow you to add many events to the same element?
 
@@ -145,7 +145,7 @@
 //     x.addEventListener("click", func2);
 //     x.addEventListener("mouseout", func3);`
 //     ```
-// Yes, you can add multiple events to the same element's addEventListener.
+Yes, you can add multiple events to the same element's addEventListener.
 
 // 13. DOM exercise
 
@@ -155,25 +155,25 @@
 //                 * Example: if the paragraph is the 3rd one added, the content should be "Hello"
 //         --> MANDATORY : Use arrow functions.
 
-// let counter = 0
-// const addPara = () => {
-// counter ++
-// const container = document.getElementById("container");
-// const p = document.createElement("p");
-// const text = (counter%3===0) ? "Hello" : "New Paragraph";
-// const textP = document.createTextNode(text);
-// p.appendChild(textP);
-// container.appendChild(p);
-// }
-// const btn = document.getElementById("btn")
-// btn. addEventListener("click", addPara)
+let counter = 0
+const addPara = () => {
+counter ++
+const container = document.getElementById("container");
+const p = document.createElement("p");
+const text = (counter%3===0) ? "Hello" : "New Paragraph";
+const textP = document.createTextNode(text);
+p.appendChild(textP);
+container.appendChild(p);
+}
+const btn = document.getElementById("btn")
+btn. addEventListener("click", addPara)
 
 //       2. Part II : Add to each new paragraph, an event listener of mouse over. When you hover on a paragraph, the paragraph should become red (ie. color of the text).
 
-// p.addEventListener("mouseover", changeColor);
-// const changeColor = (event) => {
-//     event.target.style.color = "red";
-// }
+p.addEventListener("mouseover", changeColor);
+const changeColor = (event) => {
+    event.target.style.color = "red";
+}
 
 // #### Array Methods : forEach, map, filter, reduce, find, every, some
 
@@ -183,19 +183,19 @@
 //     ```javascript
 //        const marks = [67, 60, 89, 90, 67, 42];
 //     ```
-// let sum = 0
-// function calculate () {
-//     for (let i = 0; i<marks.length; i++){
-//         sum += marks[i]
-//     }
-// }
-// let sumTwo =0 
+let sum = 0
+function calculate () {
+    for (let i = 0; i<marks.length; i++){
+        sum += marks[i]
+    }
+}
+let sumTwo =0 
 
-// function calculateTwo () {
-//     for (let grade of marks){
-//         sumTwo += grade
-//     }
-// }
+function calculateTwo () {
+    for (let grade of marks){
+        sumTwo += grade
+    }
+}
 
 // 15. What is the value of `passed` in the following code?
 
@@ -206,7 +206,7 @@
 //             return m >= 50;
 //          });
 //      ```
-// Will return False because 42 is less than 50.
+Will return False because 42 is less than 50.
 
 // 16. What does the following code log?
 
@@ -219,7 +219,7 @@
 
 //        console.log(bignums);
 //     ```
-// Will return a new array [50, 88].
+Will return a new array [50, 88].
 
 // 17. Use a **javascript array method** to square the value of every element in the array. 
 
@@ -228,7 +228,7 @@
 //        //code
 //        console.log(input) // [ 1, 4, 9, 16, 25]
 //     ```
-// input.forEach((elem, index, arr) => input[index] **= 2)
+input.forEach((elem, index, arr) => input[index] **= 2)
 
 // 18. Use **2 javascript array methods** and chain them to return the sum of all the positives ones. 
 
@@ -237,8 +237,8 @@
 //          //code
 //          console.log(total) //42
 //      ```
-// const total = secondInput.filter((num) => num > 0);
-//                          .reduce((acc, num) => acc+num);
+const total = secondInput.filter((num) => num > 0);
+                         .reduce((acc, num) => acc+num);
 
 
 // 19. Use **3 javascript methods** and chain them to abbreviate the name and return the name initials.
@@ -249,9 +249,9 @@
 //          console.log(initials)//'GRRM'
 //      ```
 
-// const initials = input.split(' ')
-//                       .map((word) => word[0])
-//                       .join("")
+const initials = input.split(' ')
+                      .map((word) => word[0])
+                      .join("")
 
 
 // #### Object and Classes
@@ -274,9 +274,10 @@
 
 //     changeTshirt(tshirt)
 //     ```
-// Both will now be red. tshirt is pointing to the same location as myshirt, so changing one will change the other. It is passed by reference.
+Both will now be red. tshirt is pointing to the same location as myshirt, so changing one will change the other. It is passed by reference.
 
 // 21. How would you change the code above, so that when you modify the key `color` from the parameter `myshirt`, it won't change the global variable `tshirt` ?
+Instead of writing myshirt.color = "red", I would create a new variable with Object.assign() to create a copy of myshirt and then change it in the new variable.
 
 // 22. Use object destructuring to retrieve the value of the keys `france` and `spain`
 
@@ -289,11 +290,12 @@
 //          }
 //        }  
 //     ```
+const { clubs: { france, spain } } = football;
 
 // 23. Use object destructuring in the function to retrieve the value of the keys `france` and `spain`
 
 //     ```javascript
-//      function retrieveSports (//here) {
+     function retrieveSports ({ clubs: { france: franceTeam, spain: spainTeam } }) {
 //         const sentence = `My favorite football teams are ${franceTeam} and ${spainTeam}`;
 //         console.log(sentence);
 //      }
@@ -326,6 +328,7 @@
 //     const cake = new Item("Chocolate Cake", 10);
 //     cake.displayInfo();
 //     ```
+Chocolate Cake is for $ 10
 
 // #### Promises
 
@@ -340,6 +343,7 @@
 //         console.log(data)
 //       })
 //     ```
+Output will be "SUCCESS". Promise is fulfilled.
 
 // 26. What will be displayed by the following code, after 2 seconds?
 
@@ -354,6 +358,7 @@
 //        console.log(data);
 //     });
 //     ```
+Output will be "OK"
 
 // 27. Consider the following `async` function and its output. What will be displayed to the console when calling the `test()` function? Explain the process
 
@@ -372,11 +377,41 @@
     
 //     test();
 //     ```
+We use await to wait for the promise to be fulfilled. Only after the promise is fulfilled, the value "done!" is assigned to "result" and then the function will execute.
 
 // 28. Use **async await**, and **the fetch API** to fetch a fact on cats and display it. Use this third party API :  `https://catfact.ninja/fact`
 //     1. In the HTML file, create a button, everytime you click it you will add a random cat fact on the DOM 
+In the HTML, I will put a <button id="add-fact-btn"> and an emtpy <ul id="cat-facts-list">
 //     2. In the JS file, create 2 functions : one to fetch data from API, the other one to display it on the page using the DOM
 //     3. Make sure to use try and catch
+In the JS, here are the two functions:
+const factList = document.getElementById('cat-facts-list');
+const factBtn = document.getElementById('add-fact-btn');
+
+factBtn.addEventListener('click', () => {
+  getCatFact().then((fact) => {
+    displayCatFact(fact);
+  }).catch((error) => {
+    console.error(error);
+  });
+});
+
+async function getCatFact() {
+  try {
+    const response = await fetch('https://catfact.ninja/fact');
+    const data = await response.json();
+    return data.fact;
+  } catch (error) {
+    throw new Error('Failed to fetch cat fact');
+  }
+}
+
+function displayCatFact(fact) {
+  const factItem = document.createElement('li');
+  factItem.innerText = fact;
+  factList.appendChild(factItem);
+}
+//This question took me a long time, and I had to check my steps many times before finally I found that it works.
 
 // 29. Use **async await**, and **the fetch API** to POST some data.
 //     * Retrieve the data from a form (you can use new FormData), and send this data to this API : `https://jsonplaceholder.typicode.com/posts`. 
@@ -384,6 +419,59 @@
 //     * Use the documentation of the API : https://jsonplaceholder.typicode.com/guide/
 //     * Use the fetch API documentation: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#uploading_json_data
 //     * Use the new FormData documentation with Object.fromEntries() : https://gomakethings.com/the-object.fromentries-method-in-vanilla-js/
+
+In the HTML I put:
+  <form>
+    <label for="title-input">Title:</label>
+    <input type="text" id="title-input" name="title">
+    <br>
+    <label for="body-input">Body:</label>
+    <textarea id="body-input" name="body"></textarea>
+    <br>
+    <button type="submit" id="submit-btn">Submit</button>
+  </form>
+  <div id="result"></div>
+
+In the JS file:
+
+const form = document.querySelector('form');
+const resultDiv = document.getElementById('result');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  postFormData(data).then((responseData) => {
+    displayResponseData(responseData);
+  }).catch((error) => {
+    console.error(error);
+  });
+});
+
+async function postFormData(data) {
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+    const responseData = await response.json();
+    return responseData;
+  } catch (error) {
+    throw new Error('Failed to post form data');
+  }
+}
+
+function displayResponseData(responseData) {
+  const resultDiv = document.getElementById('result');
+  resultDiv.innerText = JSON.stringify(responseData);
+}
+
+This problem took me a very long time too. I needed to look for a lot of help online and back on the DI platform. The final solution is a mix of what I found online. I don't feel confident about these last 2 questions that I know the material well enough.
 
 
 // #### BONUS : Classes
